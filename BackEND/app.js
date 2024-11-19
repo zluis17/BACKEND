@@ -17,9 +17,6 @@ const startServer = async () => {
     try {
         await db.authenticate();
         console.log('Conexión exitosa a la base de datos');
-        app.listen(8000, () => {
-            console.log('Servidor corriendo en http://localhost:8000/');
-        });
     } catch (error) {
         console.log(`El error de conexión es: ${error}`);
     }
